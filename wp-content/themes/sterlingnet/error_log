@@ -1,0 +1,15 @@
+[24-Sep-2012 08:59:30] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[01-Nov-2012 03:43:40] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[05-Dec-2012 12:29:13] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[05-Dec-2012 12:29:13] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[05-Dec-2012 12:29:14] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[05-Dec-2012 12:29:14] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[14-Dec-2012 10:17:08] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[04-Feb-2013 13:00:37] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[04-Feb-2013 13:00:37] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[04-Feb-2013 13:00:38] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[04-Feb-2013 13:00:38] PHP Fatal error:  Call to undefined function  get_header() in /home/sterling/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[09-Mar-2015 02:46:41] PHP Fatal error:  Call to undefined function  get_header() in /home1/sterljj4/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[09-Mar-2015 02:55:33] PHP Fatal error:  Call to undefined function  get_header() in /home1/sterljj4/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[08-Jul-2015 00:03:03 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/sterljj4/public_html/wp-content/themes/sterlingnet/index.php on line 1
+[29-Jul-2015 05:03:46 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home1/sterljj4/public_html/wp-content/themes/sterlingnet/404.php on line 1

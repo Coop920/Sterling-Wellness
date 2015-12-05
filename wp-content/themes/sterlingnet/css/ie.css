@@ -1,0 +1,35 @@
+.switcher li >a{
+	filter: alpha(opacity=55);
+	-ms-filter:filter: alpha(opacity=55);
+}
+.switcher .active >a,
+.switcher li >a:hover{
+	filter: alpha(opacity=100);
+	-ms-filter:filter: alpha(opacity=100);
+}
+.logo-holder{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+}
+.gallery #nav >ul >li >a{
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+}
+.gallery #nav >ul >li >a:hover{
+	background:#cf7019;
+	filter:none;
+}
+.footer-holder .logo{
+	filter: alpha(opacity=50);
+	-ms-filter:filter: alpha(opacity=50);
+}
+.gallery #nav >ul .last-child >a{
+	min-width:113px;
+	text-align: left;
+}
+* +html .gallery #nav >ul .last-child >a{min-width:125px;}
+#nav >ul .last-child >a{
+	min-width:120px;
+	text-align: left;
+}
+.add-nav .login-link{behavior:expression(!this.isInserted==true ? this.isInserted=(this.insertBefore(document.createElement("before"))) : '');}

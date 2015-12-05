@@ -1,0 +1,147 @@
+/*  
+Theme Name: Sterling Wellness
+Version: 3.0
+Author: Sites By Coop
+Author URI: http://sitesbycoop.com
+*/
+
+/* main elements */
+
+img.attachment-calltoActionThumb,
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+	margin-right:15px;
+	margin-top: 10px;
+}
+img.attachment-calltoActionThumb{
+	display: inline;
+	float: left;
+	margin: 0px 15px 0 0;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-top:10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 10px;
+}
+.navigation {
+	font-size: 12px;
+	line-height: 18px;
+	overflow: hidden;	
+}
+.navigation .next { float:right;}
+.navigation  .prev { float:left;}
+.navigation .next a, .navigation  .prev a { color: #9E9E9E; }
+.post,.comments,#respond {
+ clear: both;
+}
+#respond input {
+ height: 24px;
+ margin: 5px 0;
+ width: 250px;
+}
+.commentlist {margin:0;}
+#comments {clear:both;
+}
+#respond textarea {
+ width: 300px;
+}
+#respond #submit {
+ width:150px
+}
+
+#header .author strong {
+    color: #646262;
+    font-size: 26px;
+}
+.commentlist li {
+ list-style:none;
+ margin:5px;
+}
+.commentlist li p {
+ margin:0 !important;
+}
+.commentlist li .avatar {
+ float: left;
+ margin: 5px;
+}
+.add-nav .login-link a{
+	display: inline-block;
+	vertical-align: middle;
+	background: #cf7019;
+	color:#fff;
+	height: 13px;
+	text-decoration: none;
+}
+.add-nav .login-link a:hover {color: #455a21; background: none;}
+#content h2 a {
+    color: #9E9E9E;
+    font-size: 24px;
+}
+#content .post .title h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+.content_search span.tel{ display:none;} 
+#content { min-height:200px;}
+#comments h2, #respond h2 {
+    font-size: 25px;
+    line-height: 20px;
+}
+.search #content .post {min-height: auto;}
+.blog #content {width: 640px; float: left; margin-top: 10px;}
+.blog #content h3.blog-title {font-size: 25px; margin-bottom: 10px;}
+.blog #content .post {margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #505050; }
+.blog #content .post h1, .blog #content .post h2, .blog #content .post h3, .blog #content .post h4, .blog #content .post h5 {text-transform:uppercase; color:#002b5c; margin:0 0 3px 0;}
+.blog #content .post h1 {font-size: 15px;}
+.blog #content .post h2 {font-size: 15px;}
+.blog #content .post .title h2 a {text-decoration: none;}
+.blog #content .post .title h2 a:hover {text-decoration: underline;}
+.blog #content .post h3 {font-size: 13px;}
+.blog #content .post h4 {font-size: 12px;}
+.blog #content .post h5 {font-size: 11px;}
+.blog #content .post p, #content .post ul, #content .post ol, #content .post blockquote {font-size: 14px; margin-bottom: 17px;}
+.blog #content .post strong {font-weight: bold;}
+.blog #content .post em {font-style: italic;}
+.blog #content .post a, .blog #content .post a:link, .blog #content .post a:active, .blog #content .post a:visited {color:#002b5c;}
+.blog #content .post a:hover {color:#002b5c;  text-decoration: none;}
+.blog #content .post ul,.blog  #content .post ol {margin-left: 0px;}
+.blog #content .post ol {}
+.blog #content .post ul {}
+.blog #content .post blockquote {margin-left: 50px; color: #fff; background-color: #002b5c; padding: 5px 5px 0px 5px;}
+.blog #content .post img {padding: 10px;}
+.blog #content .post img.aligncenter {margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;}
+.blog #content .post img.alignleft {margin-bottom: 10px; float: left; margin-right: 15px;}
+.blog #content .post img.alignright {margin-bottom: 10px; float: right; margin-left: 15px; }
+.blog #content .post .meta p{font-size: 12px;}
+.blog #content .post .meta ul {list-style: none; padding: 0px;}
+.blog #content .post .meta li {display: inline; list-style: none; background: none; text-align: left; margin-left: 0px;}
+.blog .navigation {margin-bottom: 20px;}
+
+.blog #sidebar {width: 265px; float: left; margin: 43px 0px 0px 20px; font: 13px/22px 'MuseoSlab500Regular', Arial, Helvetica, sans-serif;}
+.blog #sidebar .widget {margin-bottom: 20px;}
+.blog #sidebar .title {height: 18px; line-height: 33px; margin-bottom: 10px; padding: 8px 6px; background-color: #F2F3F3; color: #505050; text-align: left; text-decoration: none;
+font: 16px/19px 'MuseoSlab500Regular', Arial, Helvetica, sans-serif;}
+.blog .post ul > li {}
+.blog #sidebar a {color: #6E6E6E; text-decoration: none;}
+.blog #sidebar a:hover {color: #00274C; text-decoration: underline;}
+.blog #sidebar ul {margin-left: 10px;}
+.blog #sidebar ul li {line-height: 18px;}
+
+.single #content .post h1 {margin-top: 10px;}

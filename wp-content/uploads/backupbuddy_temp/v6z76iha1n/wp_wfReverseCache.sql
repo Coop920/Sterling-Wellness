@@ -1,0 +1,11 @@
+CREATE TABLE `wp_wfReverseCache` (  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',  `host` varchar(255) NOT NULL,  `lastUpdate` int(10) unsigned NOT NULL,  PRIMARY KEY (`IP`)) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40000 ALTER TABLE `wp_wfReverseCache` DISABLE KEYS */;
+INSERT INTO `wp_wfReverseCache` VALUES('\0\0\0\0\0\0\0\0\0\0ÿÿBùC', 'crawl-66-249-67-4.googlebot.com', '1447551521');
+INSERT INTO `wp_wfReverseCache` VALUES('\0\0\0\0\0\0\0\0\0\0ÿÿBùCy', 'crawl-66-249-67-121.googlebot.com', '1447544084');
+INSERT INTO `wp_wfReverseCache` VALUES('\0\0\0\0\0\0\0\0\0\0ÿÿBùC«', 'crawl-66-249-67-171.googlebot.com', '1447511443');
+INSERT INTO `wp_wfReverseCache` VALUES('\0\0\0\0\0\0\0\0\0\0ÿÿBùC¢', 'crawl-66-249-67-162.googlebot.com', '1447511444');
+INSERT INTO `wp_wfReverseCache` VALUES('\0\0\0\0\0\0\0\0\0\0ÿÿBùC°', 'crawl-66-249-67-176.googlebot.com', '1447513623');
+INSERT INTO `wp_wfReverseCache` VALUES('\0\0\0\0\0\0\0\0\0\0ÿÿBùCž', 'crawl-66-249-67-158.googlebot.com', '1447514924');
+INSERT INTO `wp_wfReverseCache` VALUES('\0\0\0\0\0\0\0\0\0\0ÿÿBùC§', 'crawl-66-249-67-167.googlebot.com', '1447516744');
+INSERT INTO `wp_wfReverseCache` VALUES('\0\0\0\0\0\0\0\0\0\0ÿÿBùC´', 'crawl-66-249-67-180.googlebot.com', '1447526844');
+/*!40000 ALTER TABLE `wp_wfReverseCache` ENABLE KEYS */;

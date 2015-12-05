@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /site*.php*
+Disallow: /labs/*printable=Y
+Disallow: /labs/*js=*
+Disallow: /labs/*sort=*
+Disallow: /labs/*sort_direction=*
+Disallow: /labs/product.php*
+Disallow: /labs/home.php?cat=*
+Disallow: /labs/catalog/
+Disallow: /labs/search.php
+Disallow: /labs/cart.php
+Disallow: /labs/help.php
+Disallow: /labs/giftcert.php
+Disallow: /labs/product.php
+Disallow: /labs/orders.php
+Disallow: /labs/register.php
+Disallow: /labs/icon.php
+Disallow: /labs/image.php
+Disallow: /labs/error_message.php
+Disallow: /labs/offers.php
+Disallow: /labs/product_image.php
+
+Sitemap: http://www.sterling-wellness.com/labs/sitemap.xml

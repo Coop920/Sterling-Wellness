@@ -1,0 +1,10 @@
+[14-Apr-2013 06:16:45] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
+[14-Apr-2013 07:28:07] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
+[14-Apr-2013 08:49:46] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
+[14-Apr-2013 10:11:34] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
+[28-May-2013 06:57:46] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
+[14-Jul-2013 05:59:04] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
+[14-Jul-2013 07:00:31] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
+[14-Jul-2013 08:03:17] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
+[14-Jul-2013 08:56:30] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
+[14-Aug-2013 14:03:31] PHP Fatal error:  Call to undefined function  add_action() in /home/sterling/public_html/wp-content/plugins/hello.php on line 60
