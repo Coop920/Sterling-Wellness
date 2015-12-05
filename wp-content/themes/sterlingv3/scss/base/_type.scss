@@ -1,0 +1,38 @@
+///
+/// @file _type.scss
+/// \file _type.scss
+/// \ingroup STARTERKIT_SCSS_Base
+/// \brief Base theming for headers and typography.
+///
+
+
+/// Headings
+/// --------
+/// Contains basic styles for headings and additionally provides some classes
+/// which can be used to apply heading styles to other elements.
+///
+h1, h2, h3 {
+  font-family: $sans-stack;
+  color: $headers-text-color;
+}
+
+h1 {
+  @include adjust-font-size-to($xxxlargepx);
+  @include trailer(0.1);
+}
+
+h2 {
+  @include adjust-font-size-to($largepx);
+  @include trailer(1);
+}
+
+h3 {
+  @include adjust-font-size-to($normpx);
+  @include trailer(0);
+}
+
+time {
+  @include adjust-font-size-to($xsmallpx);
+  @include rem(padding-left, 1px);
+  letter-spacing: 1px;
+}

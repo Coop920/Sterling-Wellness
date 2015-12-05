@@ -1,0 +1,20 @@
+///
+/// @file base/_base.scss
+///
+/// \defgroup STARTERKIT_SCSS_Base Base
+/// \ingroup STARTERKIT_SCSS
+/// \brief A collection of architecturally high-level styles for basic elements.
+///
+
+// Partials
+@import "normalize";
+@import "root";
+@import "type";
+@import "quotes";
+@import "links";
+@import "tables";
+
+img {
+  max-width: 100%;
+  height: auto;
+}

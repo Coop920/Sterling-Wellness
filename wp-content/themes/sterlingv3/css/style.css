@@ -1,0 +1,410 @@
+/*
+ * ==================================================
+ * Normalize
+ * ==================================================
+ */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+dialog,
+summary {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-top: 0rem;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  margin: 0;
+}
+
+/* Responsive images & embedded content */
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+.ie8 img {
+  width: auto;
+}
+
+figure > img {
+  display: block;
+}
+
+/* Override max-width 100% for map displays */
+.gmap img, .view-gmap img, .openlayers-map img, #getlocations_map_canvas img {
+  max-width: none;
+}
+
+figure {
+  margin: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* Tables  */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Print styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    -webkit-filter: none !important;
+            filter: none !important;
+    text-shadow: none;
+    -ms-filter: none !important;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+html {
+  font-size: 75%;
+  line-height: 1.16667em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: normal;
+}
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+}
+
+h1 {
+  font-size: 24px;
+  font-size: 2rem;
+  line-height: 28px;
+  line-height: 2.33333rem;
+  margin-bottom: 1px;
+  margin-bottom: 0.11667rem;
+}
+
+h2 {
+  font-size: 18px;
+  font-size: 1.5rem;
+  line-height: 28px;
+  line-height: 2.33333rem;
+  margin-bottom: 14px;
+  margin-bottom: 1.16667rem;
+}
+
+h3 {
+  font-size: 12px;
+  font-size: 1rem;
+  line-height: 21px;
+  line-height: 1.75rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+}
+
+time {
+  font-size: 9px;
+  font-size: 0.75rem;
+  line-height: 14px;
+  line-height: 1.16667rem;
+  padding-left: 1px;
+  padding-left: 0.08333rem;
+  letter-spacing: 1px;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+quote {
+  font-style: italic;
+}
+
+#skip {
+  position: absolute;
+  left: -9999px;
+}
+
+a:link, a:visited {
+  color: #333;
+  text-decoration: none;
+}
+a:focus, a:hover, a:active, a.active {
+  color: #555;
+  text-decoration: underline;
+}
+
+table.cols-2 {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table.cols-2 td {
+  padding: .5em 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

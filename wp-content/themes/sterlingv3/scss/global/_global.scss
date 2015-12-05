@@ -1,0 +1,18 @@
+///
+/// @file global/_global.scss
+///
+/// \defgroup STARTERKIT Globals
+/// \ingroup STARTERKIT
+/// \brief Global utilities and variables. 
+/// 
+/// The global section is a collection of variables, mixins and other 
+/// such utilities. In general, it should produce no CSS by itself.
+///
+
+// -----------
+@import "variables";
+@import "fonts";
+@import "mixins/general-mixins";
+@import "mixins/custom-mixins";
+@import "mixins/retina-sprites-mixin";
+
