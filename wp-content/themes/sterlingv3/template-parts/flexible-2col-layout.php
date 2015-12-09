@@ -21,7 +21,12 @@
 		$_3col_image03			= get_sub_field('3_col_image_03');
 		$_3col_image_title03	= get_sub_field('3_col_image_title_03');	
 		
-?>						
+?>
+
+
+<!--           				COOPER START				           -->						
+
+
 <div class="inner">
 	<!--           !2 COL LAYOUT           -->
 	
@@ -77,6 +82,16 @@
 				endif; 
 			?>	
 		</div><!-- end 2col-list -->	
+
+
+<!--				           COOPER END 				           -->
+
+
+
+
+
+
+
 
 
 	<?php

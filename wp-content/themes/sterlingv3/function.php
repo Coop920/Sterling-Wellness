@@ -97,8 +97,8 @@ function sterlingv3_nav()
 function sterlingv3_styles()
 {
 
-    wp_register_style('sterlingv3', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-    wp_enqueue_style('sterlingv3'); // Enqueue it!
+    wp_enqueue_style('style', get_stylesheet_uri());
+    //wp_enqueue_style('sterlingv3'); // Enqueue it!
 
 }
 
@@ -109,3 +109,8 @@ function sterlingv3_styles()
 // Add Actions
 add_action('wp_enqueue_scripts', 'sterlingv3_styles'); // Add Theme Stylesheet
 ?>
+
+
+
+
+
