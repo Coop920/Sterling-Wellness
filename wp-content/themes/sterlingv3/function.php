@@ -101,3 +101,4 @@ function sterlingv3_styles()
     wp_enqueue_style('sterlingv3'); // Enqueue it!
 
 }
+?>
