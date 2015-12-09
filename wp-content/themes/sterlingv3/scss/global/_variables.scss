@@ -13,6 +13,18 @@
 // Box Model
 $box-model: 'border-box';
 
+//Breakpoints
+$break1: 600px;
+$break2: 768px;
+$break3: 1000px;
+$break4: 1200px;
+
+@include add-grid(4);
+@include add-grid(8 at $break1);
+@include add-grid(12 at $break2);
+
+$padding: 3%;
+
 // Typographic
 $base-font-size     : 12px;
 $base-line-height   : 14px;

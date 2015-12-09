@@ -5,7 +5,7 @@ var path = require('path');
 // Include Our Plugins
 var compass = require('gulp-compass');
 var prefix = require('gulp-autoprefixer');
-//var livereload = require('gulp-livereload');
+var livereload = require('gulp-livereload');
 var jshint = require('gulp-jshint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -34,8 +34,8 @@ gulp.task('sass', function() {
     }))		
 	.on("error", handleError)
 	.pipe(prefix({ cascade: true }))
-    .pipe(gulp.dest('../css'));
-	//.pipe(livereload());
+    .pipe(gulp.dest('../css'))
+	.pipe(livereload());
 });
 
 // Lint Task
@@ -67,6 +67,7 @@ gulp.task('watch', function() {
 	//gulp.watch('../**/*.js', ['lint', 'scripts']);
 			
 	// Watch for scss changes
+	livereload.listen();
 	gulp.watch('../**/*.scss', ['sass']);	
 		
 });

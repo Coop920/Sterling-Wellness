@@ -1,0 +1,28 @@
+/* 2 Col Section Image or Text */
+.two-col-layout {
+	.right {
+		.section-lead {
+			@include rem('font-size', 25px);
+			@include rem('line-height', 30px);
+		}
+		.body {
+
+		}
+		.rows-wrap {
+			.two-col-image-row {
+				margin-bottom: 30px;
+				@include clearfix-micro();
+				@include add-grid(12);	
+				.row-item {
+					@include float-span(6);
+					text-align: center;
+					&:last-child {
+						@include float-span(6,'last');
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint($break2) {
+	}
+}

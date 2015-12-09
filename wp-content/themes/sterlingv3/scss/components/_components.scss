@@ -12,3 +12,32 @@
 // Bigger components that may contain, alter or implement the smaller components above
 //@import 'components/bigthing';
 
+/* General Styling for all layout-components */
+.layout-component {
+	@include clearfix-micro();
+	@include background-grid($color: rgba(0,0,255,.5));
+	padding: 0 $padding;
+	.column {
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	@include breakpoint($break2) {
+	padding: 0;
+		.left {
+			@include float-span(3.25,1);
+			text-align: right;
+			background: red;
+		}
+		.right {
+			@include float-span(8,'last');
+			background: green;
+		}
+
+	}
+}
+
+
+// 2 Col Section Image or Text
+@import 'components/component-2-col';

@@ -4,3 +4,10 @@
 /// \ingroup STARTERKIT_SCSS_Layout
 /// \brief Footer layout
 ///
+
+footer {
+	.inner {
+		max-width: $break4;
+		margin: 0 auto;
+	}
+}

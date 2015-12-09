@@ -3,3 +3,11 @@
 /// @ingroup STARTERKIT_SCSS_Layout
 /// @brief Structure and layout
 ///
+
+
+main {
+	.inner {
+		max-width: $break4;
+		margin: 0 auto;
+	}
+}

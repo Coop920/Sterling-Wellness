@@ -408,3 +408,110 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+main .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* General Styling for all layout-components */
+.layout-component {
+  *zoom: 1;
+  background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 255, 0.5) 21.05263%, rgba(127, 127, 255, 0.625) 21.05263%, rgba(127, 127, 255, 0.625) 26.31579%, rgba(0, 0, 255, 0.5) 26.31579%, rgba(0, 0, 255, 0.5) 47.36842%, rgba(127, 127, 255, 0.625) 47.36842%, rgba(127, 127, 255, 0.625) 52.63158%, rgba(0, 0, 255, 0.5) 52.63158%, rgba(0, 0, 255, 0.5) 73.68421%, rgba(127, 127, 255, 0.625) 73.68421%, rgba(127, 127, 255, 0.625) 78.94737%, rgba(0, 0, 255, 0.5) 78.94737%, rgba(0, 0, 255, 0.5));
+  padding: 0 3%;
+}
+.layout-component:before, .layout-component:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.layout-component:after {
+  clear: both;
+}
+@media (min-width: 600px) {
+  .layout-component {
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 255, 0.5) 10.25641%, rgba(127, 127, 255, 0.625) 10.25641%, rgba(127, 127, 255, 0.625) 12.82051%, rgba(0, 0, 255, 0.5) 12.82051%, rgba(0, 0, 255, 0.5) 23.07692%, rgba(127, 127, 255, 0.625) 23.07692%, rgba(127, 127, 255, 0.625) 25.64103%, rgba(0, 0, 255, 0.5) 25.64103%, rgba(0, 0, 255, 0.5) 35.89744%, rgba(127, 127, 255, 0.625) 35.89744%, rgba(127, 127, 255, 0.625) 38.46154%, rgba(0, 0, 255, 0.5) 38.46154%, rgba(0, 0, 255, 0.5) 48.71795%, rgba(127, 127, 255, 0.625) 48.71795%, rgba(127, 127, 255, 0.625) 51.28205%, rgba(0, 0, 255, 0.5) 51.28205%, rgba(0, 0, 255, 0.5) 61.53846%, rgba(127, 127, 255, 0.625) 61.53846%, rgba(127, 127, 255, 0.625) 64.10256%, rgba(0, 0, 255, 0.5) 64.10256%, rgba(0, 0, 255, 0.5) 74.35897%, rgba(127, 127, 255, 0.625) 74.35897%, rgba(127, 127, 255, 0.625) 76.92308%, rgba(0, 0, 255, 0.5) 76.92308%, rgba(0, 0, 255, 0.5) 87.17949%, rgba(127, 127, 255, 0.625) 87.17949%, rgba(127, 127, 255, 0.625) 89.74359%, rgba(0, 0, 255, 0.5) 89.74359%, rgba(0, 0, 255, 0.5));
+  }
+}
+@media (min-width: 768px) {
+  .layout-component {
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5) 0%, rgba(0, 0, 255, 0.5) 6.77966%, rgba(127, 127, 255, 0.625) 6.77966%, rgba(127, 127, 255, 0.625) 8.47458%, rgba(0, 0, 255, 0.5) 8.47458%, rgba(0, 0, 255, 0.5) 15.25424%, rgba(127, 127, 255, 0.625) 15.25424%, rgba(127, 127, 255, 0.625) 16.94915%, rgba(0, 0, 255, 0.5) 16.94915%, rgba(0, 0, 255, 0.5) 23.72881%, rgba(127, 127, 255, 0.625) 23.72881%, rgba(127, 127, 255, 0.625) 25.42373%, rgba(0, 0, 255, 0.5) 25.42373%, rgba(0, 0, 255, 0.5) 32.20339%, rgba(127, 127, 255, 0.625) 32.20339%, rgba(127, 127, 255, 0.625) 33.89831%, rgba(0, 0, 255, 0.5) 33.89831%, rgba(0, 0, 255, 0.5) 40.67797%, rgba(127, 127, 255, 0.625) 40.67797%, rgba(127, 127, 255, 0.625) 42.37288%, rgba(0, 0, 255, 0.5) 42.37288%, rgba(0, 0, 255, 0.5) 49.15254%, rgba(127, 127, 255, 0.625) 49.15254%, rgba(127, 127, 255, 0.625) 50.84746%, rgba(0, 0, 255, 0.5) 50.84746%, rgba(0, 0, 255, 0.5) 57.62712%, rgba(127, 127, 255, 0.625) 57.62712%, rgba(127, 127, 255, 0.625) 59.32203%, rgba(0, 0, 255, 0.5) 59.32203%, rgba(0, 0, 255, 0.5) 66.10169%, rgba(127, 127, 255, 0.625) 66.10169%, rgba(127, 127, 255, 0.625) 67.79661%, rgba(0, 0, 255, 0.5) 67.79661%, rgba(0, 0, 255, 0.5) 74.57627%, rgba(127, 127, 255, 0.625) 74.57627%, rgba(127, 127, 255, 0.625) 76.27119%, rgba(0, 0, 255, 0.5) 76.27119%, rgba(0, 0, 255, 0.5) 83.05085%, rgba(127, 127, 255, 0.625) 83.05085%, rgba(127, 127, 255, 0.625) 84.74576%, rgba(0, 0, 255, 0.5) 84.74576%, rgba(0, 0, 255, 0.5) 91.52542%, rgba(127, 127, 255, 0.625) 91.52542%, rgba(127, 127, 255, 0.625) 93.22034%, rgba(0, 0, 255, 0.5) 93.22034%, rgba(0, 0, 255, 0.5));
+  }
+}
+.layout-component .column {
+  margin-bottom: 20px;
+}
+.layout-component .column:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .layout-component {
+    padding: 0;
+  }
+  .layout-component .left {
+    -sgs-span-settings: ("span": 3.25, "location": 1, "grid": 12, "gutter": 0.25, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
+    width: 25.84746%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 1.69492%;
+    text-align: right;
+    background: red;
+  }
+  .layout-component .right {
+    -sgs-span-settings: ("span": 8, "location": 5, "grid": 12, "gutter": 0.25, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
+    width: 66.10169%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+    background: green;
+  }
+}
+
+/* 2 Col Section Image or Text */
+.two-col-layout .right .section-lead {
+  font-size: 25px;
+  font-size: 2.08333rem;
+  line-height: 30px;
+  line-height: 2.5rem;
+}
+.two-col-layout .right .rows-wrap .two-col-image-row {
+  margin-bottom: 30px;
+  *zoom: 1;
+}
+.two-col-layout .right .rows-wrap .two-col-image-row:before, .two-col-layout .right .rows-wrap .two-col-image-row:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.two-col-layout .right .rows-wrap .two-col-image-row:after {
+  clear: both;
+}
+.two-col-layout .right .rows-wrap .two-col-image-row .row-item {
+  -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.25, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
+  width: 49.15254%;
+  clear: right;
+  float: left;
+  margin-left: 0;
+  margin-right: 1.69492%;
+  text-align: center;
+}
+.two-col-layout .right .rows-wrap .two-col-image-row .row-item:last-child {
+  -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.25, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": ((null: null)));
+  width: 49.15254%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}

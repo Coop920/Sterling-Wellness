@@ -1,9 +1,9 @@
 <!--           !2 COL LAYOUT           -->
 <?php 
 		// ACF Variables
-		$title			= get_sub_field('2_col_title');
-		$lead			= get_sub_field('2_col_lead');
-		$body			= get_sub_field('2_col_body');	
+		$section_title			= get_sub_field('2_col_title');
+		$section_lead			= get_sub_field('2_col_lead');
+		$section_body			= get_sub_field('2_col_body');	
 		
 		$layout_options	= get_sub_field('2_col_layout_toggle');
 		
@@ -25,30 +25,25 @@
 
 
 <!--           				COOPER START				           -->						
+<div class="two-col-layout layout-component">
+	<div class="column left">
+		<h2><?php echo $section_title; ?></h2>
+	</div><!-- end column left -->
+	<div class="column right">
+		<div class="section-lead"><?php echo $section_lead; ?></div>
+		<div class="body"><?php echo $section_body; ?></div>
 
 
-<div class="inner">
-	<!--           !2 COL LAYOUT           -->
-	
-	<!--           !TITLE           -->
-	<div class="2col-title">
-		<h1><?php echo $title; ?></h1>
-	</div><!-- end 2col-title -->
-	
-	<!--           !LEAD           -->	
-	<div class="2col-lead">	
-		<h2><?php echo $lead; ?></h2>
-	</div><!-- end 2col-lead -->
-	
-	<!--           !BODY           -->
-	<div class="2col-body">
-		<?php echo $body; ?>
-	</div><!-- end 2col-body -->
-	
-	<?php
-		// Check ACF Extended Layout Options
-		if( $layout_options == '2_col_list_repeater' ) :
-	?>
+
+
+
+
+
+
+<?php
+			// Check ACF Extended Layout Options
+			if( $layout_options == '2_col_list_repeater' ) :
+		?>
 	
 		<!--           !2COL LIST REPEATER           -->
 
@@ -81,13 +76,7 @@
 					endwhile;
 				endif; 
 			?>	
-		</div><!-- end 2col-list -->	
-
-
-<!--				           COOPER END 				           -->
-
-
-
+		</div><!-- end 2col-list -->
 
 
 
@@ -100,6 +89,7 @@
 	?>
 
 
+		<div class="rows-wrap">
 		
 		<!--           !2 COL IMAGE REPEATER           -->
 		<?php	
@@ -114,26 +104,26 @@
 				$_2col_image02			= get_sub_field('2_col_image_02');
 				$_2col_image_title02	= get_sub_field('2_col_image_title_02');
 		?>
-		
-		<div class="">
-			<!--           COL 1           -->
-			<div class="">
-				<img src="<?php echo $_2col_image01['url']; ?>" alt="<?php echo $_2col_image01['alt']; ?>">
-				<h3><?php echo $_2col_image_title01; ?></h3>
+			<div class="two-col-image-row">
+				<!--           COL 1           -->
+				<div class="row-item">
+					<img src="<?php echo $_2col_image01['url']; ?>" alt="<?php echo $_2col_image01['alt']; ?>">
+					<h3><?php echo $_2col_image_title01; ?></h3>
+				</div>
+				
+				<!--           COL 2           -->
+				<div class="row-item">
+					<img src="<?php echo $_2col_image02['url']; ?>" alt="<?php echo $_2col_image02['alt']; ?>">
+					<h3><?php echo $_2col_image_title02; ?></h3>
+				</div>
 			</div>
-			
-			<!--           COL 2           -->
-			<div class="">
-				<img src="<?php echo $_2col_image02['url']; ?>" alt="<?php echo $_2col_image02['alt']; ?>">
-				<h3><?php echo $_2col_image_title02; ?></h3>
-			</div>
-		</div>
 	
 		<?php
 				endwhile;
 			endif;
 		?>		
 	
+		</div>
 	<?php
 		elseif( $layout_options == '3_col_image_repeater' ) :
 	?>
@@ -148,39 +138,28 @@
 	<?php
 		endif;
 	?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</div><!-- end column right -->
+	
 	
 
-	
-</div><!-- end row -->
-<!-- end 1 col layout -->
+</div> <!-- emd 2-col layout -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--				           COOPER END 				           -->
