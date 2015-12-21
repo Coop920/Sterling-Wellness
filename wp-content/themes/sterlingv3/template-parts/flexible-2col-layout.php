@@ -14,152 +14,140 @@
 
 
 		$_3col_image_repeater	= get_sub_field('3_col_image_repeater');
-		$_3col_image01			= get_sub_field('3_col_image_01');
-		$_3col_image_title01	= get_sub_field('3_col_image_title_01');
-		$_3col_image02			= get_sub_field('3_col_image_02');
-		$_3col_image_title02	= get_sub_field('3_col_image_title_02');
-		$_3col_image03			= get_sub_field('3_col_image_03');
-		$_3col_image_title03	= get_sub_field('3_col_image_title_03');	
+	
 		
 ?>
 
-
-<!--           				COOPER START				           -->						
 <div class="two-col-layout layout-component">
 	<div class="column left">
 		<h2><?php echo $section_title; ?></h2>
 	</div><!-- end column left -->
 	<div class="column right">
-		<div class="section-lead"><?php echo $section_lead; ?></div>
-		<div class="body"><?php echo $section_body; ?></div>
+		<div class="section-lead">
+			<?php echo $section_lead; ?>
+		</div><!-- end section-lead -->
+		<div class="body">
+			<?php echo $section_body; ?>
+		</div><!-- end body -->
 
-
-
-
-
-
-
-
-<?php
+		<?php
 			// Check ACF Extended Layout Options
 			if( $layout_options == '2_col_list_repeater' ) :
 		?>
 	
-		<!--           !2COL LIST REPEATER           -->
-
-		<div class="2col-list">
-			<h3><?php echo $list_title; ?></h3>
-			
-			<?php	
-				// Check if the flexible content field has rows of data
-				if( have_rows('2_col_list_repeater') ) : 
-					// Loop through the rows of data
-					while( have_rows('2_col_list_repeater') ) : the_row();
-					
-					//ACF Variables
-					$_2col_item01	= get_sub_field('2_col_list_item_01');
-					$_2col_item02	= get_sub_field('2_col_list_item_02');	
-					
-			?>
-			<div class="2col-list-items">
-				<!--           LIST COL 1           -->
-				<div class="list-item">
-					<?php echo $_2col_item01; ?>
-				</div>
-				
-				<!--           LIST COL 2           -->	
-				<div class="list-item">
-					<?php echo $_2col_item02; ?>
-				</div>
-			</div><!-- end 2col-list-items -->
-			<?php
-					endwhile;
-				endif; 
-			?>	
-		</div><!-- end 2col-list -->
-
-
-
-
-
+			<!--           !2COL LIST REPEATER           -->
+			<div class="rows-wrap">
+				<div class="two-col-list-title">
+					<h3><?php echo $list_title; ?></h3>
+				</div><!-- end two-col-list-title -->
+				<?php	
+					// Check if the flexible content field has rows of data
+					if( have_rows('2_col_list_repeater') ) : 
+						// Loop through the rows of data
+						while( have_rows('2_col_list_repeater') ) : the_row();
+						//ACF Variables
+						$_2col_item01	= get_sub_field('2_col_list_item_01');
+						$_2col_item02	= get_sub_field('2_col_list_item_02');	
+				?>
+				<div class="two-col-list-row">
+					<!--           LIST COL 1           -->
+					<div class="row-item">
+						<?php echo $_2col_item01; ?>
+					</div><!-- end row-item -->
+					<!--           LIST COL 2           -->	
+					<div class="row-item">
+						<?php echo $_2col_item02; ?>
+					</div><!-- end row-item -->
+				</div><!-- end two-col-list-items -->
+				<?php
+						endwhile;
+					endif;
+				?>	
+			</div><!-- end rows-wrap -->
+			<!-- end 2col list repeater -->
 
 	<?php
 		// Check ACF Extended Layout Options
 		elseif( $layout_options == '2_col_image_repeater' ) :
 	?>
-
-
-		<div class="rows-wrap">
-		
+	
 		<!--           !2 COL IMAGE REPEATER           -->
-		<?php	
-			// Check if the flexible content field has rows of data
-			if( have_rows('2_col_image_repeater') ) : 
-				// Loop through the rows of data
-				while( have_rows('2_col_image_repeater') ) : the_row();
-				
-				//ACF Variables
-				$_2col_image01			= get_sub_field('2_col_image_01');
-				$_2col_image_title01	= get_sub_field('2_col_image_title_01');
-				$_2col_image02			= get_sub_field('2_col_image_02');
-				$_2col_image_title02	= get_sub_field('2_col_image_title_02');
-		?>
+		<div class="rows-wrap">
+			<?php	
+				// Check if the flexible content field has rows of data
+				if( have_rows('2_col_image_repeater') ) : 
+					// Loop through the rows of data
+					while( have_rows('2_col_image_repeater') ) : the_row();
+					
+					//ACF Variables
+					$_2col_image01			= get_sub_field('2_col_image_01');
+					$_2col_image_title01	= get_sub_field('2_col_image_title_01');
+					$_2col_image02			= get_sub_field('2_col_image_02');
+					$_2col_image_title02	= get_sub_field('2_col_image_title_02');
+			?>
 			<div class="two-col-image-row">
 				<!--           COL 1           -->
 				<div class="row-item">
 					<img src="<?php echo $_2col_image01['url']; ?>" alt="<?php echo $_2col_image01['alt']; ?>">
 					<h3><?php echo $_2col_image_title01; ?></h3>
-				</div>
+				</div><!-- end row-item -->
 				
 				<!--           COL 2           -->
 				<div class="row-item">
 					<img src="<?php echo $_2col_image02['url']; ?>" alt="<?php echo $_2col_image02['alt']; ?>">
 					<h3><?php echo $_2col_image_title02; ?></h3>
-				</div>
-			</div>
-	
-		<?php
-				endwhile;
-			endif;
-		?>		
-	
-		</div>
+				</div><!-- end row-item -->
+			</div><!-- end two-col-image-row -->
+			<?php
+					endwhile;
+				endif;
+			?>
+		</div><!-- end rows-wrap -->	
+		<!-- end 2col image repeater -->
+
 	<?php
 		elseif( $layout_options == '3_col_image_repeater' ) :
 	?>
-	
-	<!--           !3 COL IMAGE REPEATER           -->
-	<!--           COL 1           -->
-	
-	<!--           COL 2           -->
-	
-	<!--           COL 3           -->
-	
+
+		<!--           !3COL IMAGE REPEATER           -->
+		<div class="rows-wrap">			
+			<?php
+				if( have_rows('3_col_image_repeater') ) :
+					while( have_rows('3_col_image_repeater') ) : the_row();
+					$_3col_image01			= get_sub_field('3_col_image_01');
+					$_3col_image_title01	= get_sub_field('3_col_image_title_01');
+					$_3col_image02			= get_sub_field('3_col_image_02');
+					$_3col_image_title02	= get_sub_field('3_col_image_title_02');
+					$_3col_image03			= get_sub_field('3_col_image_03');
+					$_3col_image_title03	= get_sub_field('3_col_image_title_03');
+			?>
+			<div class="three-col-image-row">
+				<!--           COL 1           -->
+				<div class="row-item">
+					<img src="<?php echo $_3col_image01['url']; ?>" alt="<?php echo $_3col_image01['alt']; ?>">
+					<h3><?php echo $_3col_image_title01; ?></h3>
+				</div><!-- end row-item -->							
+				<!--           COL 2           -->
+				<div class="row-item">
+					<img src="<?php echo $_3col_image02['url']; ?>" alt="<?php echo $_3col_image02['alt']; ?>">
+					<h3><?php echo $_3col_image_title02; ?></h3>
+				</div><!-- end row-item -->
+				<!--           COL 3           -->
+				<div class="row-item">
+					<img src="<?php echo $_3col_image03['url']; ?>" alt="<?php echo $_3col_image03['alt']; ?>">
+					<h3><?php echo $_3col_image_title03; ?></h3>
+				</div><!-- end row-item -->
+			</div><!-- end three-col-image-row -->
+			
+			<?php
+					endwhile;
+				endif;
+			?>
+		</div><!-- end rows-wrap -->
+		<!-- end 3col image repeater -->
+			
 	<?php
 		endif;
 	?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
 	</div><!-- end column right -->
-	
-	
-
-</div> <!-- emd 2-col layout -->
-
-<!--				           COOPER END 				           -->
+</div><!-- end two-col-layout -->

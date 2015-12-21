@@ -31,6 +31,11 @@
 					// Loop through the rows of data
 					while( have_rows('flexible_content_section') ) : the_row();
 
+						// !1 COL LAYOUT
+						if( get_row_layout() == '1_col_layout') :
+							get_template_part('/template-parts/flexible','1col-layout');
+						endif;
+						// end 1 col layout
 						
 						// !2 COL LAYOUT
 						// Check if this row layout is in use
@@ -40,6 +45,11 @@
 						endif;
 						// end 2 col layout
 						
+						// !TESTIMONIAL LAYOUT
+						if( get_row_layout() == 'testimonial_layout' ) :
+							get_template_part('/template-parts/flexible','testimonial-layout');
+						endif;
+						// end testimonial layout
 
 					endwhile;
 				endif; 
@@ -49,7 +59,7 @@
 				endwhile;
 			endif; 
 		?><!-- end repeater field -->
-					
+				
 	</div>
 </main>	
 
