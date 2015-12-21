@@ -8,7 +8,7 @@ Author URI: http://sitesbycoop.com
 /* main elements */
 
 @import url("css/style.css");
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,500,300);
 
 img.attachment-calltoActionThumb,
 .alignleft,
@@ -156,18 +156,52 @@ font: 16px/19px 'MuseoSlab500Regular', Arial, Helvetica, sans-serif;}
 
 /*				TEMP CSS				*/
 
+.section-title h1 {
+	font-family: raleway;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.section-lead h2 {
+	font-family: raleway;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.body {
+	font-family: raleway;
+	font-size: 18px;
+	font-weight: 400;
+}
 
 /* 1 Col Section  */
 .one-col-layout .section-title {
 	text-align: center;
 }
 
+.one-col-layout .three-col-image-row .row-item h3 {
+	font-family: raleway;
+	font-size: 20px;
+	font-weight: 500;
+}
 
 
 /* 2 Col Section List Items Text */
-.two-col-list-title {
+.two-col-list-title h3 {
+	font-size: 18px;
 	text-align: center;
 	font-weight: bold;
+}
+
+.two-col-list-row .row-item {
+	font-size: 18px;
+	font-weight: 400;
+	text-align: left!important;
+}
+
+.two-col-list-row .row-item. ul {
+	list-style-type: disc;
+	position: inside;
 }
 
 .two-col-layout .rows-wrap h3 {
@@ -208,16 +242,31 @@ font: 16px/19px 'MuseoSlab500Regular', Arial, Helvetica, sans-serif;}
 /* 2 Col Section List Items Text */ 
 
 
-/* START WORKING SECTION */
-
-
-
 /* Testimonial Section */
 
 .testimonial-layout .section-title {
 	text-align: center;
 }
 
+
+.testimonial-layout {
+	font-family: raleway;
+}
+
+.testimonial-layout .testimonial {
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.testimonial-layout .testimonial-author {
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.testimonial-layout .testimonial-location {
+	font-weight: 500;
+	font-size: 15px;
+}
 
 .testimonial-layout .rows-wrap h3 {
   margin-bottom: 30px;
@@ -258,9 +307,7 @@ font: 16px/19px 'MuseoSlab500Regular', Arial, Helvetica, sans-serif;}
 /* Testimonial Section */
 
 
-
-/* END WORKING SECTION */
-
+/* 3 Col Section */
 
 .three-col-image-row {
 	margin-bottom: 30px;
@@ -276,6 +323,39 @@ font: 16px/19px 'MuseoSlab500Regular', Arial, Helvetica, sans-serif;}
 	text-align: center;
 }
 
+.three-col-image-row .row-item h3 {
+	font-size: 18px;
+}
+
+/* 3 Col Section */
+
+/* TEMP OVERWRITE  */ 
+
+.one-col-layout {
+	background-color: rgba(0, 0, 0, 0.2)
+}
+
+.two-col-layout {
+	background-color: rgba(0, 0, 0, 0.1)
+}
+
+.testimonial-layout {
+	background-color: rgba(0, 0, 0, 0.3)
+}
+
+.layout-component {
+	background-image: none;
+}
+
+.layout-component .left {
+	background: none;
+}
+
+.layout-component .right {
+	background: none;
+}
 
 
 
+
+/* TEMP OVERWRITE  */ 

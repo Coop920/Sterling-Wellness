@@ -13,11 +13,11 @@
 <div class="testimonial-layout layout-component">
 	<!--           !TITLE           -->
 	<div class="section-title">
-		<h2><?php echo $title; ?></h2>
+		<h1><?php echo $title; ?></h1>
 	</div><!-- end section-title -->
 	<!--           !LEAD           -->
 	<div class="section-lead">
-		<?php echo $lead; ?>
+		<h2><?php echo $lead; ?></h2>
 	</div><!-- end section-lead -->
 	
 	<div class="rows-wrap">

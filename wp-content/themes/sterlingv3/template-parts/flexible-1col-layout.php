@@ -12,12 +12,12 @@
 	<!--           !1 COL LAYOUT           -->	
 	<!--           !TITLE           -->
 	<div class="section-title">
-		<h2><?php echo $title; ?></h2>
+		<h1><?php echo $title; ?></h1>
 	</div>
 	
 	<!--           !LEAD           -->
 	<div class="section-lead">
-		<?php echo $lead; ?>
+		<h2><?php echo $lead; ?></h2>
 	</div>
 	
 	<?php

@@ -20,11 +20,11 @@
 
 <div class="two-col-layout layout-component">
 	<div class="column left">
-		<h2><?php echo $section_title; ?></h2>
+		<h1><?php echo $section_title; ?></h1>
 	</div><!-- end column left -->
 	<div class="column right">
 		<div class="section-lead">
-			<?php echo $section_lead; ?>
+			<h2><?php echo $section_lead; ?></h2>
 		</div><!-- end section-lead -->
 		<div class="body">
 			<?php echo $section_body; ?>
@@ -52,12 +52,18 @@
 				<div class="two-col-list-row">
 					<!--           LIST COL 1           -->
 					<div class="row-item">
-						<?php echo $_2col_item01; ?>
+						<?php if( !empty( $_2col_item01 ) ) : ?>
+							<ul><li><?php echo $_2col_item01; ?></li></ul>
+						<?php endif; ?>
 					</div><!-- end row-item -->
 					<!--           LIST COL 2           -->	
+
 					<div class="row-item">
-						<?php echo $_2col_item02; ?>
+						<?php if( !empty( $_2col_item02 ) ) : ?>					
+							<ul><li><?php echo $_2col_item02; ?></li></ul>
+						<?php endif; ?>
 					</div><!-- end row-item -->
+
 				</div><!-- end two-col-list-items -->
 				<?php
 						endwhile;
