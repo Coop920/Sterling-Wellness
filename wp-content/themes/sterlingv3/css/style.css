@@ -387,6 +387,9 @@ quote {
   left: -9999px;
 }
 
+a {
+  transition: all 0.3s ease;
+}
 a:link, a:visited {
   color: #333;
   text-decoration: none;
@@ -409,6 +412,11 @@ img {
   height: auto;
 }
 
+p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
 main .inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -419,9 +427,42 @@ footer .inner {
   margin: 0 auto;
 }
 
+header {
+  border-bottom: solid 2px #f8f8f8;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+header.cloned {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
 header .inner {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px 0;
+}
+header .inner .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+header .inner .nav {
+  text-align: center;
+}
+header .inner .nav li {
+  display: inline-block;
+  text-align: left;
+  margin: 0 20px;
+  font-size: 20px;
+  font-size: 1.66667rem;
+}
+header .inner .nav li a {
+  color: #11434c;
+}
+header .inner .nav li a:hover {
+  text-decoration: none;
+  color: #b9bf1f;
+}
+header .inner .nav li.active a {
+  color: #b9bf1f;
 }
 
 /* General Styling for all layout-components */
