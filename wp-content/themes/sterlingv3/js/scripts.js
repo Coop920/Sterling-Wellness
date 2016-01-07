@@ -3,37 +3,43 @@
 	$(function () {
 		
 		'use strict';
-		
 
-		// Create a clone of the menu, right next to original.
-		$('.header').addClass('original').clone().insertAfter('.header').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+		var fillHeight = $('header').height();
+		$('#filler').css('height', fillHeight);
 
-		var scrollIntervalID = setInterval(stickIt, 10);
+	    $('header.header').each(function() {
+	    	var header = $(this);
+	    	headerCalc(header)
+		});
+	    $(window).scroll(function() {
+		    $('header.header').each(function() {
+		    	var header = $(this);
+		    	headerCalc(header)
+			});
+	    });
 
-		function stickIt() {
+	    function headerCalc($header) {
+		    var headerHeight = $header.height();
+		    var heroOffset = $('#filler').height();
+	        var scroll = $(window).scrollTop();
+	        if (scroll > (heroOffset+headerHeight)) {
+	            $header.addClass('fixed');
+	        } else {
+	            $header.removeClass('fixed');
+	        }
+	    }
 
-		  var orgElementPos = $('.original').offset();
-		  var orgElementTop = orgElementPos.top;               
+	    var logo_actual_width    = $('.logo').width();
+	    var logo_actual_height   = $('.logo').height();
+	    var logo_wrapper_width;
+		var	logo_wrapper_height;
 
-		  if ($(window).scrollTop() >= (orgElementTop)) {
-		    // scrolled past the original position; now only show the cloned, sticky element.
+		// Calculate logo wrapper width
+		var logo_wrapper_width = logo_actual_width * (  logo_wrapper_height / logo_actual_height  );
 
-		    // Cloned element should always have same left position and width as original element.     
-		    var orgElement = $('.original');
-		    var coordsOrgElement = orgElement.offset();
-		    var leftOrgElement = coordsOrgElement.left;  
-		    var widthOrgElement = orgElement.css('width');
-		    $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
-		    $('.original').css('visibility','hidden');
-		  } else {
-		    // not scrolled past the menu; only show the original menu.
-		    $('.cloned').hide();
-		    $('.original').css('visibility','visible');
-		  }
-		}
+	     // Set fixed width for logo wrapper to force correct dimension
+		$( '.logo' ).css( 'width', logo_wrapper_width );
 
-
-		
 	});
 	
 })(jQuery, this);

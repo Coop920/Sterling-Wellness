@@ -2,12 +2,15 @@
 
 	<main role="main">
 		<div id="hero">
+			<div id="filler"><!-- &nbsp; --></div>
             <?php 
               query_posts( 'post_type=slides&order=ASC' );
 
 				if ( have_posts() ) while ( have_posts() ) : the_post(); 				
              
 					echo the_post_thumbnail('slide_thumbnail');
+
+					echo '<span>'.get_the_excerpt().'</span>';
 						
 				 endwhile;
   

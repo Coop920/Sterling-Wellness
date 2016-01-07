@@ -352,6 +352,9 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 // Shortcodes above would be nested like this -
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
 
+// Fonts
+add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
 
 /*------------------------------------*\
 	ShortCode Functions
@@ -368,5 +371,15 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+
+
+
+
+function wpb_add_google_fonts() {
+
+wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700,500,300', false ); 
+}
+
+
 
 ?>

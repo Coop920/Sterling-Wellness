@@ -6,8 +6,26 @@
 ///
 
 footer {
+	background-color: #003a4a;
+	padding: 90px 0 20px;
+	font-family: Raleway;
 	.inner {
 		max-width: $break4;
 		margin: 0 auto;
+		.nav {
+			clear: both;
+			text-align: center;
+			margin-top: 120px;
+			li {
+				text-align: left;
+				display: inline-block;
+				@include rem('font-size', 15px);
+				font-weight: 300;
+				margin: 0 15px;
+				a {
+					color: #fff;
+				}
+			}
+		}
 	}
 }
