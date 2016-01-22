@@ -10,21 +10,31 @@
 */
 	get_header(); 
 ?>
-<main role="main">
-	<div class="inner">
+<main role="main">	
+	<?php
+	/* TEMPORARILY COMMENTED OUT WHILE DEVELOPING HOME PAGE
+		// Check if the current page is the Home Page
+		if( is_front_page() ) :
+			// If it is then use Hero Section
+			get_template_part('/template-parts/content','hero');
+		endif;
+	*/
+	?>
+		
+	<!--           !FLEXIBLE CONTENT CONTAINER           -->
+	<?php
+	// Check if the repeater field has rows of data
+	if( have_rows('content_container') ) :
+	
+		// Loop through the rows of data 
+		while( have_rows('content_container') ) : the_row();
 
-		<!--           !FLEXIBLE CONTENT CONTAINER           -->
-		<?php
-			// Check if the repeater field has rows of data
-			if( have_rows('content_container') ) :
-			
-				// Loop through the rows of data 
-				while( have_rows('content_container') ) : the_row();
-
-				// ACF Variables
-		?>
-		<!--           !ASSEMBLE SECTION CONTAINER & STYLE           -->		
-		<section class="flexible-content-wrapper">
+		// ACF Variables
+		$background_toggle	= get_sub_field('section_background_toggle');
+	?>
+	<!--           !ASSEMBLE SECTION CONTAINER & STYLE           -->
+	<section class="flexible-content-wrapper <?php echo $background_toggle; ?>">
+		<div class="inner">
 			<?php
 				// Check if the flexible content field has rows of data
 				if( have_rows('flexible_content_section') ) : 
@@ -53,14 +63,12 @@
 
 					endwhile;
 				endif; 
-			?><!-- end flexible content area -->
-		</section><!-- end flexible-content-wrapper -->
-		<?php
-				endwhile;
-			endif; 
-		?><!-- end repeater field -->
-				
-	</div>
+			?>
+		</div><!-- end inner -->
+	</section><!-- end flexible-content-wrapper -->
+	<?php
+		endwhile;
+	endif; 
+	?><!-- end repeater field -->		
 </main>	
-
 <?php get_footer(); ?>
