@@ -189,13 +189,39 @@ header .inner .nav li {
 	letter-spacing:	1px;
 }
 
-header .inner .nav li a:hover{
+header .inner .nav li a:hover,
+header .inner .nav li.current_page_item a {
 	color: #b2d234;
+}
+
+.footer {
+	position: relative;	
+}
+
+.footer:after {
+	background-image: url("img/SterlingLogoPattern.gif");
+	content: "";
+	opacity: 0.0099;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 0; 
+	background-size: 16% auto;
+}
+
+.footer .inner .nav li {
+	font-family: raleway;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 
 /* Shadows & Text Decorations */
 .flexible-content-wrapper {
 	box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.15);
+	position: relative;
 }
 
 .section-white .section-title h1 {
@@ -359,7 +385,13 @@ header .inner .nav li a:hover{
 	*zoom: 1;
 	font-size: 18px;
 	text-align: center;
-	font-weight: bold;
+	font-weight: 600;
+	font-family: raleway;
+}
+
+.two-col-layout .rows-wrap .two-col-list-wrap .two-col-list-row .row-item ul li {
+	font-family: raleway;
+	font-size: 18px;
 }
 
 .two-col-layout .right .rows-wrap .two-col-list-wrap .two-col-list-row {
@@ -594,25 +626,35 @@ header .inner .nav li a:hover{
 	background-color: #f5f5f5;
 }
 
+.section-grey:after {
+	background-image: url("img/SterlingLogoPattern.gif");
+	content: "";
+	opacity: 0.04;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 0; 
+	background-size: 15% auto;
+}
 
 .section-orange {
 	background-color: #e98524;
-	position: relative;
 }
-
 
 .section-orange:after {
 	background-image: url("img/SterlingLogoPattern.gif");
-  content: "";
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 0; 
+	content: "";
+	opacity: 0.03;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 0; 
+	background-size: 15% auto;
 }
-
 
 .section-orange h1 {
 	color: white;	
@@ -643,6 +685,19 @@ header .inner .nav li a:hover{
 	background-color: #b2d234;
 }
 
+.section-green:after {
+	background-image: url("img/SterlingLogoPattern.gif");
+	content: "";
+	opacity: 0.04;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 0; 
+	background-size: 15% auto;
+}
+
 .section-green h1 {
 	color: white;
 }
@@ -668,9 +723,21 @@ header .inner .nav li a:hover{
 }
 
 
-
 .section-dark-blue {
 	background-color: #003c4b;
+}
+
+.section-dark-blue:after {
+	background-image: url("img/SterlingLogoPattern.gif");
+	content: "";
+	opacity: 0.0098;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 0; 
+	background-size: 15% auto;
 }
 
 .section-dark-blue h1 {
@@ -700,6 +767,19 @@ header .inner .nav li a:hover{
 
 .section-light-blue {
 	background-color: #59c1ad;
+}
+
+.section-light-blue:after {
+	background-image: url("img/SterlingLogoPattern.gif");
+	content: "";
+	opacity: 0.03;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 0; 
+	background-size: 15% auto;
 }
 
 .section-light-blue h1 {
