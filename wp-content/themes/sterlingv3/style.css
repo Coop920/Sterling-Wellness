@@ -240,6 +240,8 @@ header .inner .nav li a:hover{
 .flexible-content-wrapper .inner {
 	padding-top: 25px;
 	padding-bottom: 85px;
+	position: relative;
+	z-index: 2;
 }
 
 /* Flexible Content */
@@ -595,13 +597,22 @@ header .inner .nav li a:hover{
 
 .section-orange {
 	background-color: #e98524;
+	position: relative;
 }
 
-/*
-.section-orange {
+
+.section-orange:after {
 	background-image: url("img/SterlingLogoPattern.gif");
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0; 
 }
-*/
+
 
 .section-orange h1 {
 	color: white;	
